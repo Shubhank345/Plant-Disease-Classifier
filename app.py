@@ -13,7 +13,7 @@ def custom_loss_function(y_true, y_pred):
 
 # Load the model with custom objects dictionary
 try:
-    MODEL = tf.keras.models.load_model(r"C:\Users\Dell\Desktop\t\potatoes.h5", custom_objects={"custom_loss_function": custom_loss_function})
+    MODEL = tf.keras.models.load_model(r"C:\Users\dell1\OneDrive\Desktop\Crop-disease-prediction-using-streamlit\potatoes.h5", custom_objects={"custom_loss_function": custom_loss_function})
 except Exception as e:
     st.error(f"Error loading the model: {e}")
     st.stop()
